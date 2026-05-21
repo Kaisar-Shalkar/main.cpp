@@ -1,5 +1,6 @@
 #include <iostream>
 int main(){
+    std::cout <<"Hello my user! " << std::endl;
     int san, san2;
     std::cout << "Write the first number: "; std::cin >> san;
     std::cout << "Write the second number: "; std::cin >> san2;
