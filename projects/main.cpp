@@ -1,12 +1,13 @@
 #include <iostream>
 #include <string>
+using namespace std;
 int main(){
-    std::string name;
-    std::cout <<"What is your name: "; std::cin >> name;
-    std::cout <<"Hello " << name <<std::endl;
+    string name;
+    cout <<"What is your name: "; cin >> name;
+    cout <<"Hello " << name << endl;
     int san, san2;
-    std::cout << "Write the first number: "; std::cin >> san;
-    std::cout << "Write the second number: "; std::cin >> san2;
-    std::cout << "The sum of your two number is: " << san + san2 << "\n";
+    cout << "Write the first number: "; cin >> san;
+    cout << "Write the second number: "; cin >> san2;
+    cout << "The sum of your two number is: " << san + san2 << "\n";
     return 0;
 }
