@@ -2,12 +2,22 @@
 #include <string>
 using namespace std;
 int main(){
-    string name;
-    cout <<"What is your name: "; cin >> name;
-    cout <<"Hello " << name << endl;
-    int san, san2;
-    cout << "Write the first number: "; cin >> san;
+    int san1, san2;
+    char sign;
+    cout << "Write the first number: "; cin >> san1;
     cout << "Write the second number: "; cin >> san2;
-    cout << "The sum of your two number is: " << san + san2 << "\n";
+    cout << "What do you want to do: "; cin >> sign;
+    if(sign == '*') {
+        cout << "Answer is: " << san1 * san2 << endl;
+    }
+    if(sign == '/') {
+        cout << "Anser is: " << san1 / san2 << endl;
+    }
+    if(sign == '+') {
+        cout << "Anser is: " << san1 + san2 << endl;
+    }
+    if(sign == '-') {
+        cout << "Anser is: " << san1 - san2 << endl;
+    }
     return 0;
 }
