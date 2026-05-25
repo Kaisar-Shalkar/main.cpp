@@ -6,20 +6,27 @@ int main(){
     cout << "Write the first number: "; cin >> san1;
     cout << "Write the second number: "; cin >> san2;
     cout << "What do you want to do: "; cin >> sign;
-    if (sign == '*') {
-        cout << "Answer is: " << san1 * san2 << endl;
-    }
-    else if (sign == '/') {
-        cout << "Anser is: " << san1 / san2 << endl;
-    }
-    else if (sign == '+') {
-        cout << "Anser is: " << san1 + san2 << endl;
-    }
-    else if (sign == '-') {
-        cout << "Anser is: " << san1 - san2 << endl;
+    if (san2 != 0) {
+        switch (sign) {
+            case '*':
+                cout << "Answer: " << san1 * san2;
+                break;
+            case '/':
+                cout << "Answer: " << san1 / san2;
+                break;
+            case '+':
+                cout << "Answer: " << san1 + san2;
+                break;
+            case '-':
+                cout << "Answer: " << san1 - san2;
+                break;
+            default:
+                cout << "Error";
+                break;
+        }
     }
     else {
-        cout << "Error" << "\n";
+        cout << "Error";
     }
     return 0;
 }
