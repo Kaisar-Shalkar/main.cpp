@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+    cout << "If you want to calculator write c " << endl;
     int san1, san2;
     char sign;
     cout << "Write the first number: "; cin >> san1;
