@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int san1, san2;
-    int res;
+    float san1, san2;
+    float res;
     char sign;
     cout << "Write the first number: "; cin >> san1;
     cout << "Write the second number: "; cin >> san2;
@@ -24,8 +24,7 @@ int main(){
             default:
                 cout << "Error";
                 break;
-        }
-        cout << "The answer is: " << res << endl;
+        } cout << "The answer is: " << res << endl;
     }
     else {
         cout << "Error";
