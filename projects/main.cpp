@@ -1,33 +1,55 @@
 #include <iostream>
 using namespace std;
 int main(){
-    float san1, san2;
-    float res;
-    char sign;
-    cout << "Write the first number: "; cin >> san1;
-    cout << "Write the second number: "; cin >> san2;
-    cout << "What do you want to do: "; cin >> sign;
-    if (san2 != 0) {
-        switch (sign) {
-            case '*':
-                res = san1 * san2;
+    char inter = 'y';
+    while (inter == 'y'){
+        float san1, san2;
+        float res;
+        char sign;
+        cout << "Write the first number: "; cin >> san1;
+        cout << "Write the second number: "; cin >> san2;
+        cout << "What do you want to do: "; cin >> sign;
+        if (san2 != 0) {
+            switch (sign) {
+                case '*':
+                    res = san1 * san2;
+                    break;
+                case '/':
+                    res = san1 / san2;
+                    break;
+                case '+':
+                    res = san1 + san2;
+                    break;
+                case '-':
+                    res = san1 - san2;
+                    break;
+                default:
+                    cout << "Error";
+                    break;
+            } cout << "The answer is: " << res << endl;
+        }
+        else {
+            cout << "Error";
+        }
+        char ans;
+        cout << "Do you want to continue;"; cin >> ans;
+        switch (ans) {
+            case 'y':
+                inter = 'y';
                 break;
-            case '/':
-                res = san1 / san2;
+            case 'Y':
+                inter = 'y';
                 break;
-            case '+':
-                res = san1 + san2;
+            case 'n':
+                inter = 'n';
                 break;
-            case '-':
-                res = san1 - san2;
+            case 'N':
+                inter = 'n';
                 break;
             default:
-                cout << "Error";
+                cout << "Write only Y or N" << endl;
                 break;
-        } cout << "The answer is: " << res << endl;
-    }
-    else {
-        cout << "Error";
+        }
     }
     return 0;
 }
